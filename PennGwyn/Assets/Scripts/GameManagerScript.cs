@@ -7,6 +7,9 @@ public class GameManagerScript : MonoBehaviour
 
     public static GameManagerScript GameManager;
 
+    
+
+
 
     private void Awake()
     {

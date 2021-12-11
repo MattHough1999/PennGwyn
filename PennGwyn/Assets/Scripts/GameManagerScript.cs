@@ -7,6 +7,7 @@ public class GameManagerScript : MonoBehaviour
 
     public static GameManagerScript GameManager;
 
+    public SceneManagerScript sceneManager;
     
 
 

@@ -155,8 +155,8 @@ MonoBehaviour:
   pos2: {fileID: 0}
   minDistFromPoint: 0.15
   forgetPlayerTime: 3
-  RunSpeed: 10
-  NormalSpeed: 5
+  RunSpeed: 6
+  NormalSpeed: 2
 --- !u!1 &2345913871409503944
 GameObject:
   m_ObjectHideFlags: 0

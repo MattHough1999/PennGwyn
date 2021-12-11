@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-
+    public GameObject DEATHEffect;
 
     // Raytracing 
     public Transform RayFirePos;
@@ -160,5 +160,27 @@ public class EnemyScript : MonoBehaviour
         if (scale.x > 0) { lookDirection = transform.right; }
         else { lookDirection = -transform.right; }
 
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("AHAHAH");
+        if (collision.transform.tag == "Bullet")
+        {
+            StartCoroutine(DEATH());
+        }
+    }
+
+
+    IEnumerator DEATH()
+    {
+
+        rend.enabled = false;
+        GameObject death =   Instantiate(DEATHEffect);
+        death.transform.position = transform.position;
+        death.transform.rotation = death.transform.rotation;
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
     }
 }

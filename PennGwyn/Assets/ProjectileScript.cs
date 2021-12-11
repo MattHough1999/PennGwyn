@@ -16,7 +16,6 @@ public class ProjectileScript : MonoBehaviour
     /// </summary>
     void Start()
     {
-        rig.AddForce(transform.right * 1000f);
-        Destroy(gameObject, 5);
+      
     }
 }

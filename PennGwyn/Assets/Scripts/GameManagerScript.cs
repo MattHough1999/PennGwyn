@@ -7,9 +7,10 @@ public class GameManagerScript : MonoBehaviour
 
     public static GameManagerScript GameManager;
 
+    // Managers
+    public AudioManagerScript audioManager;
+    public SceneManagerScript sceneManager;
     
-
-
 
     private void Awake()
     {

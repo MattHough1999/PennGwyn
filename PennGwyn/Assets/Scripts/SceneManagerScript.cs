@@ -7,7 +7,7 @@ public class SceneManagerScript : MonoBehaviour
 {
     public void SwitchScene(int SceneToSwitchTo)
     {
-      //  SceneManager.LoadScene(SceneToSwitchTo);
-      //  SceneChanged(SceneToSwitchTo);
+       SceneManager.LoadScene(SceneToSwitchTo);
+      // SceneChanged(SceneToSwitchTo);
     }
 }

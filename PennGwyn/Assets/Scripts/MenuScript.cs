@@ -10,12 +10,13 @@ public class MenuScript : MonoBehaviour
 
     public void OnStartClicked()
     {
-        //GameManager.sceneManager.SwitchScene(1);
+
+        GameManagerScript.GameManager.sceneManager.SwitchScene(0);
     }
 
     public void OnExitClicked()
     {
-
+        Application.Quit();
 
     }
 

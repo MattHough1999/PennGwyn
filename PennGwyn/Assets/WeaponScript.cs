@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WeaponScript : MonoBehaviour
 {
+    public AudioSource ShootSound;
+
     public SpriteRenderer Character;
     public Transform ProjectileContainer;
     public GameObject Bullet;
@@ -66,11 +68,12 @@ public class WeaponScript : MonoBehaviour
 
         WeaponHolster.transform.rotation = Quaternion.Euler(0f, 0f, rotation_z + offset);
 
-        if (Input.GetKeyDown(KeyCode.F)) { Fire(); }
+        if (Input.GetKeyDown(KeyCode.Mouse0)) { Fire(); }
     }
 
     private void Fire()
     {
+        ShootSound.Play();
         GameObject projectile =  GameObject.Instantiate(Bullet);
         projectile.transform.SetParent(ProjectileContainer);
         Rigidbody2D rig = projectile.GetComponent<Rigidbody2D>();

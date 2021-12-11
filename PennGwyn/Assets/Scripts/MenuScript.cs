@@ -6,12 +6,10 @@ public class MenuScript : MonoBehaviour
 {
 
 
-
-
     public void OnStartClicked()
     {
 
-        GameManagerScript.GameManager.sceneManager.SwitchScene(2);
+        GameManagerScript.GameManager.sceneManager.SwitchScene(1);
     }
 
     public void OnExitClicked()

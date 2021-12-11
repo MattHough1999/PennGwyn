@@ -82,7 +82,7 @@ public class WeaponScript : MonoBehaviour
     
 
 
-        Destroy(rig, 5);
+        Destroy(projectile, 3);
 
 
     }
